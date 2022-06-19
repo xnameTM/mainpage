@@ -14,32 +14,12 @@ a {
 }
 
 body {
-    min-width: 100%;
-    min-height: 100vh;
-    overflow: hidden;
-    /* background: linear-gradient(to right bottom, #18259e 0.0%, #18259e 2.5%, #8a2be2 2.5%, #8a2be2 5.0%, #18259e 5.0%, #18259e 7.5%, #8a2be2 7.5%, #8a2be2 10.0%, #18259e 10.0%, #18259e 12.5%, #8a2be2 12.5%, #8a2be2 15.0%, #18259e 15.0%, #18259e 17.5%, #8a2be2 17.5%, #8a2be2 20.0%, #18259e 20.0%, #18259e 22.5%, #8a2be2 22.5%, #8a2be2 25.0%, #18259e 25.0%, #18259e 27.5%, #8a2be2 27.5%, #8a2be2 30.0%, #18259e 30.0%, #18259e 32.5%, #8a2be2 32.5%, #8a2be2 35.0%, #18259e 35.0%, #18259e 37.5%, #8a2be2 37.5%, #8a2be2 40.0%, #18259e 40.0%, #18259e 42.5%, #8a2be2 42.5%, #8a2be2 45.0%, #18259e 45.0%, #18259e 47.5%, #8a2be2 47.5%, #8a2be2 50.0%, #18259e 50.0%, #18259e 52.5%, #8a2be2 52.5%, #8a2be2 55.0%, #18259e 55.0%, #18259e 57.5%, #8a2be2 57.5%, #8a2be2 60.0%, #18259e 60.0%, #18259e 62.5%, #8a2be2 62.5%, #8a2be2 65.0%, #18259e 65.0%, #18259e 67.5%, #8a2be2 67.5%, #8a2be2 70.0%, #18259e 70.0%, #18259e 72.5%, #8a2be2 72.5%, #8a2be2 75.0%, #18259e 75.0%, #18259e 77.5%, #8a2be2 77.5%, #8a2be2 80.0%, #18259e 80.0%, #18259e 82.5%, #8a2be2 82.5%, #8a2be2 85.0%, #18259e 85.0%, #18259e 87.5%, #8a2be2 87.5%, #8a2be2 90.0%, #18259e 90.0%, #18259e 92.5%, #8a2be2 92.5%, #8a2be2 95.0%, #18259e 95.0%, #18259e 97.5%, #8a2be2 97.5%, #8a2be2 100.0%); */
+    background: #000;
 }
 
-/* .bg {
-    width: 110.6%;
+.box100x100 {
+    width: 100%;
     height: 100vh;
-    position: relative;
-    background: linear-gradient(to right, #18259e 0.0%, #18259e 2.5%, #8a2be2 2.5%, #8a2be2 5.0%, #18259e 5.0%, #18259e 7.5%, #8a2be2 7.5%, #8a2be2 10.0%, #18259e 10.0%, #18259e 12.5%, #8a2be2 12.5%, #8a2be2 15.0%, #18259e 15.0%, #18259e 17.5%, #8a2be2 17.5%, #8a2be2 20.0%, #18259e 20.0%, #18259e 22.5%, #8a2be2 22.5%, #8a2be2 25.0%, #18259e 25.0%, #18259e 27.5%, #8a2be2 27.5%, #8a2be2 30.0%, #18259e 30.0%, #18259e 32.5%, #8a2be2 32.5%, #8a2be2 35.0%, #18259e 35.0%, #18259e 37.5%, #8a2be2 37.5%, #8a2be2 40.0%, #18259e 40.0%, #18259e 42.5%, #8a2be2 42.5%, #8a2be2 45.0%, #18259e 45.0%, #18259e 47.5%, #8a2be2 47.5%, #8a2be2 50.0%, #18259e 50.0%, #18259e 52.5%, #8a2be2 52.5%, #8a2be2 55.0%, #18259e 55.0%, #18259e 57.5%, #8a2be2 57.5%, #8a2be2 60.0%, #18259e 60.0%, #18259e 62.5%, #8a2be2 62.5%, #8a2be2 65.0%, #18259e 65.0%, #18259e 67.5%, #8a2be2 67.5%, #8a2be2 70.0%, #18259e 70.0%, #18259e 72.5%, #8a2be2 72.5%, #8a2be2 75.0%, #18259e 75.0%, #18259e 77.5%, #8a2be2 77.5%, #8a2be2 80.0%, #18259e 80.0%, #18259e 82.5%, #8a2be2 82.5%, #8a2be2 85.0%, #18259e 85.0%, #18259e 87.5%, #8a2be2 87.5%, #8a2be2 90.0%, #18259e 90.0%, #18259e 92.5%, #8a2be2 92.5%, #8a2be2 95.0%, #18259e 95.0%, #18259e 97.5%, #8a2be2 97.5%, #8a2be2 100.0%);
-    animation: anim 2s linear infinite;
-} */
-
-/* @keyframes anim {
-    from {
-        left: 0;
-    }
-
-    to {
-        left: -10.6%;
-    }
-} */
-
-body {
-    background: #000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,4 +36,77 @@ p.glitch {
 ::selection {
     background: red;
     color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff000027;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ff000060;
+    
+}
+
+.box__item {
+    min-width: 150px;
+    min-height: 150px;
+    border: 2px solid #ff000060;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+}
+
+.box__items {
+    margin: 10px;
+    transition: .2s;
+}
+
+p.box__text {
+    color: white;
+    margin-top: 4px;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: red -2px 0, cyan 2px 0;
+    letter-spacing: 2px;
+    transition: .2s;
+}
+
+.box__item ion-icon {
+    color: #fff;
+    font-size: 100px;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: .2s;
+}
+
+.box__items:hover .box__item {
+    border-color: rgba(255, 0, 0, 0.808);
+}
+
+.box__items:hover p.box__text {
+    letter-spacing: 3px;
+}
+
+.box__items:hover .box__item ion-icon {
+    transform: scale(1.04);
+}
+
+@media only screen and (max-width: 800px) {
+    p.glitch {
+        font-size: 40px;
+        margin: 20px;
+    }
 }
