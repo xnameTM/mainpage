@@ -29,7 +29,7 @@ p.glitch {
     color: #fff;
     font-size: 50px;
     font-weight: 500;
-    text-shadow: red -4px 0, cyan 4px 0;
+    text-shadow: red -3px 0, cyan 3px 0;
     letter-spacing: 3px;
 }
 
@@ -104,9 +104,15 @@ p.box__text {
     transform: scale(1.04);
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
     p.glitch {
         font-size: 40px;
         margin: 20px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .box100x100:nth-child(2) {
+        flex-direction: column;
     }
 }
