@@ -29,7 +29,7 @@ p.glitch {
     color: #fff;
     font-size: 50px;
     font-weight: 500;
-    text-shadow: red -3px 0, cyan 3px 0;
+    text-shadow: red -2px 0, cyan 2px 0;
     letter-spacing: 3px;
 }
 
@@ -76,7 +76,7 @@ p.box__text {
     margin-top: 4px;
     text-align: center;
     font-weight: 600;
-    text-shadow: red -2px 0, cyan 2px 0;
+    text-shadow: red -1px 0, cyan 1px 0;
     letter-spacing: 2px;
     transition: .2s;
 }
