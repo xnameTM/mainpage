@@ -115,4 +115,8 @@ p.box__text {
     .box100x100:nth-child(2) {
         flex-direction: column;
     }
+    
+    body {
+        padding-bottom: 50px;
+    }
 }
