@@ -289,7 +289,7 @@ footer p {
     box-shadow: 0 5px 16px lightgray;
 }
 
-.subpage_box .content p {
+.subpage_box p {
     text-align: justify;
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -301,3 +301,9 @@ footer p {
 }
 
 .subpage_box :is(h1, h2) {width: min-content;}
+
+@media screen and (max-width: 450px) {
+    .subpage_box {
+        width: 90% !important;
+    }
+}
