@@ -12,5 +12,18 @@ document.querySelectorAll(".timeline").forEach((el) => {
     el.appendChild(line)
 })
 
-const hiddenElements = document.querySelectorAll(".obs")
-hiddenElements.forEach((el) => observer.observe(el))
+document.querySelectorAll(".timeline > .content").forEach((el) => {
+    const line = document.createElement("div")
+    line.classList.add("line")
+    el.appendChild(line)
+})
+
+document.querySelectorAll(".obs").forEach((el) => observer.observe(el))
+
+document.querySelector(".btn").addEventListener('click', () => {
+    document.querySelector("header ul").classList.toggle("active")
+})
+
+document.querySelector("header ul li").addEventListener('click', () => {
+    document.querySelector("header ul").classList.remove("active")
+})
