@@ -317,7 +317,8 @@ input[type=number] {
     outline: none;
     transition: all .3s;
     color: #252422;
-    box-shadow: 0px 1px 4px #5353531a, 0px 3px 10px #5353531a, 0px 10px 20px #5353531a;
+    filter: drop-shadow(0px 2px 3px #5353535b);
+    /* box-shadow: 0px 1px 4px #5353531a, 0px 3px 10px #5353531a, 0px 10px 20px #5353531a; */
 }
 
 .inp input:focus {
