@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+    <html lang="pl-PL">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kalkulator BMI</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="website icon" type="jpg" href="assets/bmi_icon.png">
+        <script src="index.js" defer></script>
+    </head>
+    <body class="female">
+        <h1>Kalkulator BMI</h1>
+        <div class="slide s1 enabled">
+            <p class="description">
+                Wskaźnik BMI pozwala dowiedzieć się, czy waga ciała jest prawidłowa.
+                Oprócz tego określa ryzyko wystąpienia chorób wynikających z nadwagi,
+                np. miażdżycy. Kalkulator BMI online to internetowe narzędzie, które
+                pomaga zorientować się, jaka masa jest odpowiednia do wzrostu, płci
+                oraz wieku.
+            </p>
+            <button id="btn-s1" class="btn" onclick="changeSlide(1)">Rozpocznij</button>
+        </div>
+        <div class="slide s2">
+            <div class="container">
+                <h2>Wybierz płeć:</h2>
+                <div class="box">
+                    <div class="circle" select="female">
+                        <div class="bottom">
+                            <img src="assets/woman-outline.svg" alt="">
+                            <p>Kobieta</p>
+                        </div>
+                        <div class="left">
+                            <img src="assets/man-outline.svg" alt="">
+                            <p>Mężczyzna</p>
+                        </div>
+                        <div class="right">
+                            <img src="assets/helicopter-svgrepo-com.svg" alt="">
+                            <p>Helikopter bojowy</p>
+                        </div>
+                    </div>
+                </div>
+                <button id="plec-left" tabindex="1" onclick='changePlec("left")' class="btn-plec left"></button>
+                <button id="plec-right" tabindex="2" onclick='changePlec("right")' class="btn-plec right"></button>
+            </div>
+            <div class="buttons">
+                <button id="btn-s2-back" tabindex="4" onclick="changeSlide(0)" class="btn-back btn">Wróć</button>
+                <button id="btn-s2" tabindex="3" onclick="changeSlide(2)" class="btn">Potwierdź</button>
+            </div>
+        </div>
+        <div class="slide s3">
+            <div class="inputs">
+                <h2>Budowa ciała i wiek</h2>
+                <div class="inp">
+                    <input type="number" tabindex="1" id="weight" autocomplete="off" placeholder="Podaj wagę (kg)" required oninput="validity.valid||(value='');">
+                    <label for="weight">Waga</label>
+                    <p class="error"><img src="assets/alert-circle-outline.svg" alt=""> Wpisz swoją wagę</p>
+                </div>
+                <div class="inp">
+                    <input type="number" tabindex="2" id="height" autocomplete="off" placeholder="Podaj wzrost (cm)" required oninput="validity.valid||(value='');">
+                    <label for="height">Wzrost</label>
+                    <p class="error"><img src="assets/alert-circle-outline.svg" alt=""> Wpisz swój wzrost</p>
+                </div>
+                <div class="inp">
+                    <input type="number" tabindex="3" id="age" autocomplete="off" placeholder="Podaj wiek" required oninput="validity.valid||(value='');">
+                    <label for="age">Wiek</label>
+                    <p class="error"><img src="assets/alert-circle-outline.svg" alt=""> Wpisz swój wiek</p>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="btn-s3-back" tabindex="5" onclick="changeSlide(1)" class="btn-back btn">Wróć</button>
+                <button id="btn-s3" tabindex="4" onclick="bmi()" class="btn">Sprawdź</button>
+            </div>
+        </div>
+        <div class="slide s4">
+            <div>
+                <h2>Twoje BMI:</h2>
+                <p id="result">X</p>
+                <p id="state">...</p>
+            </div>
+            <div>
+                <ul>
+                    <li>Płęć: <span id="infoPlec"></span></li>
+                    <li>Waga: <span id="infoWeight"></span> kg</li>
+                    <li>Wzrost: <span id="infoHeight"></span> cm</li>
+                    <li>Wiek: <span id="infoAge"></span> lat</li>
+                </ul>
+            </div>
+            <button id="btn-s4" onclick="changeSlide(0); resetData()" class="btn">Wróć do strony głównej</button>
+        </div>
+        <div class="fancyStains">
+            <div style="left: 10vw; top: 40vh; rotate: 0; background: linear-gradient(var(--color3), var(--color4));"></div>
+            <div style="left: 55vw; top: 5vh; rotate: 120deg; background: linear-gradient(var(--color4), var(--color5));"></div>
+            <div style="left: 70vw; top: 50vh; rotate: 60deg; background: linear-gradient(var(--color5), var(--color6));"></div>
+            <div style="left: 25vw; top: 70vh; rotate: 30deg; background: linear-gradient(var(--color6), var(--color1));"></div>
+        </div>
+    </body>
+</html>
