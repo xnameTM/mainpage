@@ -8,7 +8,10 @@ const changeSlide = (index) => {
 const getPlec = () => {return document.querySelector(".circle").getAttribute("select")}
 
 const resetData = () => {
-    document.querySelectorAll(".inp input").forEach(el => {el.value = ""})
+    document.querySelectorAll(".inp input").forEach(el => {
+        el.value = ""
+        el.nextElementSibling.classList.remove("filled")
+    })
 }
 
 const changePlec = (direction) => {
