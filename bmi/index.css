@@ -90,7 +90,7 @@ h1 {
 
 .btn {
     width: 150px;
-    height: 50px;
+    min-height: 50px;
     border: none;
     background: #252422;
     color: #f6fff8;
